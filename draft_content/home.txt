@@ -1,0 +1,9 @@
+Hi, I'm Tristan McDonald.
+
+I design to answer the question, "what does this need to do, and how best can it do that"?
+
+I write code to answer the question, "what will I be glad of when I come back to this codebase in five years time?"
+
+I've been busy in my role as Principal of Frontend and Design at Omni Digital and so my website hasn't been a priority, but I do my best to keep producing articles.
+
+Say hi if you feel like it.
