@@ -69,44 +69,44 @@ const PATHS = {
         site: "http://" + devMachineIp + ":9080",
     },
     files: {
-        entry: "templates/pages/*.html",
-        dest: "./dist",
-        watch: "templates/**/*",
+        entry: "src/templates/pages/*.html",
+        dest: "./",
+        watch: "src/templates/**/*",
     },
     images: {
-        entry: "assets/images/*",
-        dest: "dist/assets/images",
-        watch: "assets/images/**/*",
+        entry: "src/assets/images/*",
+        dest: "assets/images",
+        watch: "src/assets/images/**/*",
     },
     javascript: {
         common: {
-            dest: "dist/assets/js",
+            dest: "assets/js",
         },
         app: {
             outputName: "app.js",
-            entry: "assets/js/app.js",
-            watch: "assets/js/**/*",
+            entry: "src/assets/js/app.js",
+            watch: "src/assets/js/**/*",
         },
         vendor: {
             outputName: "vendor.js",
-            entry: "assets/js/vendor/**/*",
-            watch: "assets/js/vendor/*",
+            entry: "src/assets/js/vendor/**/*",
+            watch: "src/assets/js/vendor/*",
         },
         final: {
             outputName: "app.min.js",
-            app: "dist/assets/js/app.js",
-            vendor: "dist/assets/js/vendor.js",
-            watch: "assets/js/**/*",
+            app: "assets/js/app.js",
+            vendor: "assets/js/vendor.js",
+            watch: "src/assets/js/**/*",
         },
     },
     styles: {
         common: {
-            dest: "dist/assets/css",
+            dest: "assets/css",
         },
         stylus: {
             outputName: "app.css",
-            entry: "assets/stylus/app.styl",
-            watch: "assets/stylus/**/*",
+            entry: "src/assets/stylus/app.styl",
+            watch: "src/assets/stylus/**/*",
         },
     },
 };
@@ -241,7 +241,7 @@ function renderTemplates (callback) {
                 prefix: "@@",
                 basepath: "@file",
                 context: {
-                    baseurl: "", // this only works if the variable is all lowercase with no underscore
+                    baseurl: "http://www.tristanmcdonald.co.uk", // this only works if the variable is all lowercase with no underscore
                 },
             }),
             htmlMin({
@@ -285,11 +285,11 @@ gulp.task("images", minifyImages);
 function watch () {
     browserSync.init({
         server: {
-            baseDir: "./dist",
+            baseDir: "./",
         },
         notify: false,
         open: false,
-        files: ["dist/assets/css/*.min.css", ],
+        files: ["/assets/css/*.min.css", ],
         reloadOnRestart: true,
     });
     gulp.watch(PATHS.files.watch, ["files", ]).on("change", browserSync.reload);
