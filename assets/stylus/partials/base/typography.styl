@@ -1,0 +1,150 @@
+:root
+    // see functions/interpolation.styl for an explanation of this function
+    interpolation('font-size', calc-interpolation, 480px, 1680px, 13px, 19px)
+
+html
+    text-rendering optimizeLegibility
+    -webkit-font-smoothing antialiased
+    -moz-osx-font-smoothing grayscale
+
+body
+select
+input
+textarea
+    font-family $ff--body
+    font-weight $fw--normal
+    line-height $lh--body
+    font-size inherit
+    letter-spacing $ls--body
+    color white
+
+h1
+h2
+h3
+h4
+    display block
+    line-height $lh--heading
+    font-family $ff--heading
+    font-weight normal
+    letter-spacing $ls--heading
+    color white
+
+    a
+    a:visited
+        color $cl--anchor
+
+        &:active
+        &:hover
+        &:focus
+            color $cl--anchor--interact
+
+h1
+    max-width ($ll * .5)ch
+    fz-scale--four()
+
+    * + &
+        sp-scale--four()
+
+h2
+    max-width ($ll * .5)ch
+    fz-scale--three()
+
+    * + &
+        sp-scale--three()
+
+h3
+    max-width ($ll * .7)ch
+    fz-scale--two()
+
+    * + &
+        sp-scale--two()
+
+h4
+    max-width ($ll - 10)ch
+    fz-scale--one()
+
+    * + &
+        sp-scale--one()
+
+p
+    mt()
+    width auto
+    max-width 100%
+    font-family $ff--body
+    font-size $fz--base
+    line-height $lh--body
+    letter-spacing $ls--body
+    color white
+
+    h1 + &
+    h2 + &
+    h3 + &
+        margin-top $sp--third
+
+    h4 + &
+        margin-top $sp--half
+
+    // add this class to paragraph content to constrain it to a readable line-length
+    // avoid setting paragraph line-lengths globally so they don't need to be overridden
+    .reading_content &
+    &.reading_content
+        width ($ll)ch
+
+        > a
+        > a:visited
+            color $cl--anchor
+
+            &:active
+            &:hover
+            &:focus
+                color $cl--anchor--interact
+
+a
+a:visited
+    trans()
+    cursor pointer
+    text-decoration none
+
+b
+strong
+    font-weight normal
+    font-family $ff--strong
+
+i
+em
+    font-style normal
+    font-family $ff--emphasis
+
+::selection
+    background-color $cl--first
+    text-shadow 0 0 .1em $cl--first--dark
+    color white
+
+.reading_content
+
+    ol
+    ul
+        display block
+        width ($ll)ch
+        max-width 100%
+        mt()
+        padding-left 3ch
+
+        &:not(first-child)
+            margin-top $sp
+
+    ol
+        list-style-type decimal
+
+    ul
+        list-style-type disc
+
+    li
+        max-width 100%
+
+        + li
+            margin-top $sp--half
+
+sup
+    vertical-align super
+    fz-scale--minus-one()

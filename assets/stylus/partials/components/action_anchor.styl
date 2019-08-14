@@ -1,0 +1,116 @@
+.action_anchor
+    flex 0 0 auto
+    trans($properties: "color, border-color, box-shadow")
+    box-shadow inset 0 0 0 white
+    border-bottom 1px solid
+    padding 0 $sp--third $sp--sixth
+
+    .action_anchor_container &
+        margin-bottom $sp
+
+        &:not(:last-child)
+            margin-right $sp
+
+    &--primary_action
+        box-shadow inset 0 0 0 $cl--brand--fourth
+        border-color $cl--brand--second
+        color $cl--brand--second
+
+        &:active
+        &:focus
+        &:hover
+            box-shadow inset 0 -.66em 0 $cl--brand--fourth
+            border-color $cl--brand--first
+            color $cl--brand--first
+
+    &--secondary_action
+        box-shadow inset 0 0 0 $cl--brand--fourth
+        border-color $cl--brand--third
+        color $cl--brand--third
+
+        &:active
+        &:focus
+        &:hover
+            box-shadow inset 0 -.66em 0 $cl--brand--fourth
+            border-color $cl--brand--second
+            color $cl--brand--second
+
+    &--reductive_action
+        box-shadow inset 0 0 0 $cl--risk--fourth
+        border-color $cl--risk--third
+        color $cl--risk--third
+
+        &:active
+        &:focus
+        &:hover
+            box-shadow inset 0 -.66em 0 $cl--risk--fourth
+            border-color $cl--risk--second
+            color $cl--risk--second
+
+    &--risk_action
+        box-shadow inset 0 0 0 $cl--risk--fourth
+        border-color $cl--risk--second
+        color $cl--risk--second
+
+        &:active
+        &:focus
+        &:hover
+            box-shadow inset 0 -.66em 0 $cl--risk--fourth
+            border-color $cl--risk--first
+            color $cl--risk--first
+
+    &--disabled
+        border-color $cl--light--first
+        color $cl--light--first
+
+        &:active
+        &:focus
+        &:hover
+            cursor not-allowed
+            box-shadow inset 0 0 0 white
+            border-color $cl--light--first
+            color $cl--light--first
+
+    &__text
+        word-break keep-all
+
+        ^[0]--disabled:active &
+        ^[0]--disabled:focus &
+        ^[0]--disabled:hover &
+
+            &::after
+            &::before
+                animation none
+
+        &--forwards_action
+
+            &::after
+                content '▷'
+                display inline-block
+                margin-left $sp--half
+                fz-scale--one()
+
+                ^[0]:active &
+                ^[0]:focus &
+                ^[0]:hover &
+                    animation action-anchor-interaction-forwards $transition-duration--double $ease-out--circ
+
+                ^[0]--primary_action &
+                ^[0]--risk_action &
+                    content '▶'
+
+        &--backwards_action
+
+            &::before
+                content '◁'
+                display inline-block
+                margin-right $sp--quarter
+
+                ^[0]:active &
+                ^[0]:focus &
+                ^[0]:hover &
+                    animation action-anchor-interaction-backwards $transition-duration--double $ease-out--circ
+
+                ^[0]--primary_action &
+                ^[0]--risk_action &
+                    content '◄'

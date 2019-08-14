@@ -1,0 +1,46 @@
+.introduction_and_image
+    display flex
+    flex-direction column
+    width 100%
+    padding $sp--double 4vw
+    +above(4)
+        padding $sp--double 0 0 $sp--double
+
+    &__introduction
+        +above(4)
+            margin-right auto
+        padding-right $sp--double
+
+        p
+            width 48ch
+            fz-scale--three()
+
+    &__image_figure
+        mt($sp--double)
+        +above(4)
+            margin-left auto
+        border-left 6px solid $cl--attention
+        +above(4)
+            width 60vw
+
+.further_information_and_contact
+    padding $sp--double
+
+    p
+        width 48ch
+        fz-scale--three()
+
+    a
+    a:visited
+        color $cl--anchor
+
+        &:active
+        &:focus
+        &:hover
+            color $cl--anchor--interact
+
+.job_title
+    font-family $ff--emphasis
+
+.action_anchor
+    fz-scale--three()

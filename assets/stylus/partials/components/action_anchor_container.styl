@@ -1,0 +1,13 @@
+.action_anchor_container
+    display flex
+    flex-direction row
+    align-items flex-start
+    justify-content flex-start
+    flex-wrap wrap
+    mt()
+    // this cancels out the margin-bottom given to action anchor
+    // elements in a action anchor container, in order to allow
+    // row-wrapping of action anchor elements, while giving the block
+    // effectively no margin-bottom
+    margin-bottom -($sp)
+    width 100%
