@@ -530,10 +530,6 @@ sup {
   padding: 3.236rem 4vw;
 }
 
-.introduction_and_image__introduction {
-  padding-right: 3.236rem;
-}
-
 .introduction_and_image__introduction p {
   width: 48ch;
   font-size: 1.423828125rem;
@@ -549,7 +545,7 @@ sup {
 }
 
 .further_information_and_contact {
-  padding: 3.236rem;
+  padding: 3.236rem 4vw;
 }
 
 .further_information_and_contact p {
@@ -689,6 +685,7 @@ sup {
 
   .introduction_and_image__introduction {
     margin-right: auto;
+    padding-right: 3.236rem;
   }
 
   .introduction_and_image__image_figure {
@@ -697,6 +694,10 @@ sup {
 
   .introduction_and_image__image_figure {
     width: 60vw;
+  }
+
+  .further_information_and_contact {
+    padding: 3.236rem;
   }
 }
 
