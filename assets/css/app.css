@@ -527,7 +527,11 @@ sup {
   -ms-flex-direction: column;
   flex-direction: column;
   width: 100%;
-  padding: 3.236rem 4vw 0;
+  padding: 3.236rem 0 0 4vw;
+}
+
+.introduction_and_image__introduction {
+  padding-right: 4vw;
 }
 
 .introduction_and_image__introduction p {
@@ -685,6 +689,9 @@ sup {
 
   .introduction_and_image__introduction {
     margin-right: auto;
+  }
+
+  .introduction_and_image__introduction {
     padding-right: 3.236rem;
   }
 
