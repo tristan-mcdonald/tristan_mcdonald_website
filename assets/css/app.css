@@ -700,7 +700,7 @@ sup {
   }
 
   .introduction_and_image__image_figure {
-    width: 60vw;
+    max-width: 60vw;
   }
 
   .further_information_and_contact {
