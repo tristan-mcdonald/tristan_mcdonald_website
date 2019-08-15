@@ -527,7 +527,7 @@ sup {
   -ms-flex-direction: column;
   flex-direction: column;
   width: 100%;
-  padding: 3.236rem 4vw;
+  padding: 3.236rem 4vw 0;
 }
 
 .introduction_and_image__introduction p {
