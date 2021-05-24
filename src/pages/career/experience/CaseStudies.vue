@@ -1,7 +1,8 @@
 <template>
     <Layout>
         <h1>Case Studies</h1>
-        <p>potato</p>
+        <p>Overview of projects</p>
+        <p>Articles tagged with case studies.</p>
     </Layout>
 </template>
 <script>
