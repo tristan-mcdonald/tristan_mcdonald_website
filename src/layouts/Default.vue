@@ -4,7 +4,7 @@
             <strong><g-link to="/">{{ $static.metadata.siteName }}</g-link></strong>
             <nav class="nav">
                 <ul>
-                    <li><g-link class="nav__link" to="/blog">Blog</g-link></li>
+                    <li><g-link class="nav__link" to="/articles">Articles</g-link></li>
                     <li><g-link class="nav__link" to="/career">Career</g-link></li>
                     <li><g-link class="nav__link" to="/career/experience">Experience</g-link></li>
                     <li><g-link class="nav__link" to="/career/experience/case-studies">Case Studies</g-link></li>
@@ -23,6 +23,9 @@
             </nav>
         </header>
         <slot/>
+        <footer class="global_footer">
+            Global footer
+        </footer><!-- .global_footer -->
     </div>
 </template>
 <static-query>

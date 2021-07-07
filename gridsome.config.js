@@ -5,5 +5,24 @@
 */
 module.exports = {
     siteName: "Tristan McDonald",
-    plugins: []
+    siteUrl: "http://localhost:8080",
+    plugins: [
+        {
+            use: "@gridsome/source-filesystem",
+            options: {
+                typeName: "Article",
+                path: "./content/articles/**/*.md",
+            },
+            refs: {
+                category: {
+                    typeName: "Category",
+                    create: true,
+                },
+            },
+        },
+    ],
+    templates: {
+        Article: "/articles/:year/:month/:title",
+    }
+
 }
