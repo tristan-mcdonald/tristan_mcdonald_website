@@ -23,7 +23,6 @@ const sync        = require("browser-sync").create();   // serve files over lan,
 const uglify      = require("gulp-uglify");             // minify javascript & replace variable names, for efficiency
 const vinylBuffer = require("vinyl-buffer");            // convert gulp's vinyl virtual file format into a buffer
 const vinylSource = require("vinyl-source-stream");     // loads browserify's output into a vinyl object
-const nunjucks    = require("gulp-nunjucks-render");    // transpiles nunjucks templates into html
 /*
     require paths object, containing all paths used.
 */
@@ -45,20 +44,6 @@ function clean(cb) {
     ),
     // callback to signal task completion
     cb();
-}
-/*
-    private task to transpile nunjucks templates into html.
-*/
-function transpileTemplates(cb) {
-    return src(PATHS.templates.input_file)
-        .pipe(nunjucks({ path: PATHS.templates.input_folder }))
-        .pipe(dest(PATHS.templates.output))
-        // reflect updated code in the browser
-        .pipe(sync.stream())
-        // callback to signal task completion
-        .on("end", function() {
-            cb();
-        });
 }
 /*
     private task to lint javascript.
@@ -145,7 +130,6 @@ function transpileStylus(cb) {
     export private tasks.
 */
 exports.clean               = clean;
-exports.transpileTemplates  = transpileTemplates;
 exports.lintJavascript      = lintJavascript;
 exports.transpileJavascript = transpileJavascript;
 exports.lintStylus          = lintStylus;

@@ -27,13 +27,6 @@ function develop() {
         server: PATHS.server.root,
         tunnel: true,
     });
-    // watch nunjucks files for changes
-    watch(
-        PATHS.templates.watch,
-        // run when function is initialised
-        { ignoreInitial: false },
-        PRIVATE_TASKS.transpileTemplates
-    );
     // watch javascript files for changes
     watch(
         PATHS.javascript.watch,
