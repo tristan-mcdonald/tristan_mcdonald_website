@@ -1,7 +1,6 @@
 <template>
     <Layout>
         <h1>404</h1>
-        <p>potato</p>
     </Layout>
 </template>
 <script>

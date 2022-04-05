@@ -23,7 +23,7 @@
                         <span class="cv__details__role_duration">August 2017 to August 2020</span>
                     </summary><!-- .cv__details__summary -->
                     <div class="cv__details__expanded_content reading_content">
-                        <p>I joined as the sole frontender and designer during five initial builds for large national private businesses and NHS trusts, and following that I became management as the team tripled in size and the agency took on larger clients and self-funded projects.</p>
+                        <p>I joined as the sole frontender and designer during five initial builds for large private businesses and NHS trusts. Following that I became management, as the team tripled in size and the agency took on larger clients and self-funded projects.</p>
                         <p>I had a varied role, seeing me building scaleable user interfaces for large webapps, leading systems architecture & requirement gathering meetings with stakeholders, steering design conversations toward user needs and business requirements in client presentations, deploying Django applications to production, leading stand-up, mentoring junior developers, writing and presenting pitches, working on business strategy, running sprint planning and review sessions, and managing interpersonal conflicts in a team.</p>
                         <p>The Princial Backend Engineer and I set up a robust and scaleable toolchain for the agency, and solved many technical issues on the code level and at a higher level, as well as company-level organisational and structural challenges. I was involved in interviewing and hiring ten members of staff.</p>
                     </div><!-- .cv__details__expanded_content -->
