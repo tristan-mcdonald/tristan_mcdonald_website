@@ -8,15 +8,69 @@
             to="/">
                 {{ $static.metadata.siteName }}
             </g-link><!-- .global_header__site_name -->
-            <nav class="nav">
-                <ul>
-                    <li>
+            <nav class="global_header__navigation">
+                <ul class="global_header__navigation__list">
+                    <li class="global_header__navigation__item">
                         <g-link
-                        class="nav__link"
-                        to="/articles">Working together</g-link>
-                    </li>
-                </ul>
-            </nav>
+                        class="global_header__navigation__anchor"
+                        to="/working-together">Working together</g-link>
+                        <ul class="global_header__navigation__nested_list">
+                            <li class="global_header__navigation__item">
+                                <g-link
+                                class="global_header__navigation__anchor"
+                                to="/working-together/contracting">Contracting</g-link>
+                            </li><!-- .global_header__navigation__item -->
+                            <li class="global_header__navigation__item">
+                                <g-link
+                                class="global_header__navigation__anchor"
+                                to="/working-together/wordpress-development">WordPress development</g-link>
+                            </li><!-- .global_header__navigation__item -->
+                            <li class="global_header__navigation__item">
+                                <g-link
+                                class="global_header__navigation__anchor"
+                                to="/working-together/impartial-consulting">Impartial consulting</g-link>
+                            </li><!-- .global_header__navigation__item -->
+                            <li class="global_header__navigation__item">
+                                <g-link
+                                class="global_header__navigation__anchor"
+                                to="/working-together/permanent-roles">Permanent roles</g-link>
+                            </li><!-- .global_header__navigation__item -->
+                        </ul><!-- .global_header__navigation__nested_list -->
+                    </li><!-- .global_header__navigation__item -->
+                    <li class="global_header__navigation__item">
+                        <g-link
+                        class="global_header__navigation__anchor"
+                        to="/experience">My experience</g-link>
+                        <ul class="global_header__navigation__nested_list">
+                            <li class="global_header__navigation__item">
+                                <g-link
+                                class="global_header__navigation__anchor"
+                                to="/experience/summary">Summary</g-link>
+                            </li><!-- .global_header__navigation__item -->
+                            <li class="global_header__navigation__item">
+                                <g-link
+                                class="global_header__navigation__anchor"
+                                to="/experience/case-studies">Case studies</g-link>
+                            </li><!-- .global_header__navigation__item -->
+                            <li class="global_header__navigation__item">
+                                <g-link
+                                class="global_header__navigation__anchor"
+                                to="/experience/design">Design</g-link>
+                            </li><!-- .global_header__navigation__item -->
+                            <li class="global_header__navigation__item">
+                                <g-link
+                                class="global_header__navigation__anchor"
+                                to="/experience/tenet-css">Tenet CSS</g-link>
+                            </li><!-- .global_header__navigation__item -->
+                        </ul><!-- .global_header__navigation__nested_list -->
+                    </li><!-- .global_header__navigation__item -->
+                    <li class="global_header__navigation__item">
+                        <g-link
+                        class="global_header__navigation__anchor"
+                        to="/blog">Articles</g-link>
+                    </li><!-- .global_header__navigation__item -->
+                </ul><!-- .global_header__navigation__list -->
+            </nav><!-- .global_header__navigation -->
         </header><!-- .global_header -->
         <slot/>
         <footer class="global_footer">
@@ -31,50 +85,3 @@
         }
     }
 </static-query>
-<style>
-    body {
-        font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-        margin:0;
-        padding:20px;
-        line-height: 1.618;
-        background-color: hsl(234.5, 15.5%, 13.9%);
-    }
-    .layout {
-        max-width: 760px;
-        margin: 0 auto;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .header {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-        margin-bottom: 40px;
-    }
-    .nav ul {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        list-style: none;
-        padding: 0 20px;
-        margin: 0;
-    }
-    nav li {
-        line-height: 2;
-    }
-    .nav__link {
-        margin-right: 20px;
-    }
-    .header a {
-        line-height: 2;
-    }
-    p,
-    h1,
-    h2,
-    h3,
-    h4,
-    a,
-    a:visited {
-        color: white;
-    }
-</style>
