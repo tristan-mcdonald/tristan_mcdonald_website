@@ -1,0 +1,22 @@
+<svg
+width="45"
+height="24"
+viewBox="0 0 45 24"
+fill="none"
+xmlns="http://www.w3.org/2000/svg">
+    <path
+    clip-rule="evenodd"
+    d="M45 4L3 4L3 0L45 0V4Z"
+    fill-rule="evenodd"
+    fill="white"/>
+    <path
+    clip-rule="evenodd"
+    d="M45 14H0V10H45V14Z"
+    fill-rule="evenodd"
+    fill="white"/>
+    <path
+    clip-rule="evenodd"
+    d="M45 24L7 24L7 20L45 20V24Z"
+    fill-rule="evenodd"
+    fill="white"/>
+</svg>
