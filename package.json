@@ -2,9 +2,10 @@
   "name": "tristan_mcdonald_website",
   "private": true,
   "scripts": {
-    "develop": "gridsome develop",
     "explore": "gridsome explore",
-    "build": "gridsome build"
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "start": "gridsome develop"
   },
   "dependencies": {
     "@gridsome/source-filesystem": "^0.6.2",
