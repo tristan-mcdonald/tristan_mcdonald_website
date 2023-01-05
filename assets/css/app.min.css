@@ -487,7 +487,6 @@ sup {
 }
 
 .action_anchor__text--forwards_action::after {
-  content: '▷';
   display: inline-block;
   margin-left: 0.809rem;
   font-size: 1.125rem;
@@ -497,10 +496,6 @@ sup {
 .action_anchor:active .action_anchor__text--forwards_action::after,.action_anchor:focus .action_anchor__text--forwards_action::after,.action_anchor:hover .action_anchor__text--forwards_action::after {
   -webkit-animation: action-anchor-interaction-forwards 0.28s cubic-bezier(0.075, 0.82, 0.165, 1);
   animation: action-anchor-interaction-forwards 0.28s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-.action_anchor--primary_action .action_anchor__text--forwards_action::after,.action_anchor--risk_action .action_anchor__text--forwards_action::after {
-  content: '▶';
 }
 
 .action_anchor__text--backwards_action::before {
