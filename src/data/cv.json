@@ -1,0 +1,44 @@
+[
+  {
+    "dates": "Feb 2023 - Present",
+    "employer": "PV01",
+    "title": "Lead Designer & Frontend Engineer",
+    "description": "I've designed and built a platform to allow issuers to purchase and tokenise government & corporate bonds, and investors to invest and trade their share of each tokenised bond. I've worked with smart contracts and within strict regulation, and have had a key role in designing and evolving user journeys. I've mostly worked with Django, HTMX, and my framework Tenet, but recently I've been the sole engineer on an application using React, Next.js, Typescript, and Tailwind CSS, which uses the blockchain as its only persistence."
+  },
+  {
+    "dates": "Aug 2020 - Feb 2023",
+    "employer": "Various contracts",
+    "title": "Software Engineer & Designer",
+    "description": "I built a system for the United Nations to help businesses ensure that their supply chains don't contribute to human rights abuses, an app to make clearly accessible the databases of the National Research Centre on Privacy, Harm Reduction, and Adversarial Influence Online, and an AI-powered app for PadPilot, to help trainee pilots learn techniques and regulation."
+  },
+  {
+    "dates": "Aug 2017 - July 2020",
+    "employer": "Omni Digital",
+    "title": "Principal of Frontend Engineering & Design",
+    "description": "I joined as the sole frontend engineer and designer during five initial builds for large national private businesses and NHS trusts, then I became management as the team grew to 20 and took on larger clients and self-funded projects. I had a varied role, seeing me building scaleable user interfaces for large apps, leading systems architecture & requirement gathering meetings with stakeholders, steering design conversations toward user needs and business requirements in client presentations, deploying Django applications to production, leading stand-up, mentoring junior developers, writing and presenting pitches, working on business strategy, running sprint planning and review sessions, and managing interpersonal conflicts in a team. The Principal Backend Engineer and I set up a robust and scaleable toolchain for the agency, and solved many technical issues on both the code level and at an organisational level."
+  },
+  {
+    "dates": "Jan 2012 - Jul 2017",
+    "employer": "Perma Development",
+    "title": "Software Engineer & Designer",
+    "description": "I founded a software agency specialising in calendar booking functionality, building and maintaining WordPress websites for over a hundred clients. I pitched for work, handled contracts, managed projects, was the sole designer, and built robust software, while managing a team of three others."
+  },
+  {
+    "dates": "Sep 2008 - Dec 2011",
+    "employer": "Avon Pension Fund",
+    "title": "Senior Systems & Technology Officer",
+    "description": "I trained and supported Pension Officers and Lawyers in using software to calculate pension benefits. I developed the software to keep it compliant with emerging regulation, and regularly tested the software against manual pension calculations."
+  },
+  {
+    "dates": "Sep 2006 - Aug 2008",
+    "employer": "Royal United Hospitals Bath NHS Foundation Trust",
+    "title": "Medical Records Archivist & Software Project Lead",
+    "description": "I oversaw a project in cooperation with Fuji, creating a digital stock catalogue of the trust's large archive of medical records. I hired a team of temporary staff, directed their work, and liased with the engineers at Fuji to solve hardware and software issues that arose."
+  },
+  {
+    "dates": "Aug 2002 - Aug 2006",
+    "employer": "Waterstones",
+    "title": "Senior Logistics Manager",
+    "description": "I worked as a senior bookseller, and specialised in organising the procurement and return of stock for the largest national literature festivals."
+  }
+]

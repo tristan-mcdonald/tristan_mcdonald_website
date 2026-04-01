@@ -1,0 +1,17 @@
+---
+import cvData from '../data/cv.json';
+---
+
+<section id="experience" class="cv_section">
+	<h2 class="cv_section__heading">Experience</h2>
+	<ul class="cv_section__list">
+		{cvData.map((role) => (
+			<li class="cv_section__item">
+				<span class="cv_section__dates">{role.dates}</span>
+				<span class="cv_section__employer">{role.employer}</span>
+				<span class="cv_section__title">{role.title}</span>
+				<p class="cv_section__description">{role.description}</p>
+			</li>
+		))}
+	</ul>
+</section>
